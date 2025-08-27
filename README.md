@@ -3,6 +3,7 @@
 This document explains three Python code snippets that demonstrate different functionalities: sorting characters, replacing words with emoticons, and unpacking elements from a list.
 
 📌 ITEM 1: Alphabet Soup
+
 def alphabet_soup(text):  # This function arranges the characters in alphabetical order from the input text
     return ''.join(sorted(text))  # This sorts and joins the characters to form the alphabetized string
 
@@ -11,6 +12,7 @@ print(alphabet_soup("codingwithece"))  # This prints the alphabetically arranged
 print(alphabet_soup("hacker"))  # This prints the alphabetically arranged characters of the word
 
 📌 ITEM 2: Emotify
+
 def emotify(text):  # This function replaces specific words with their corresponding emoticon symbols
     emoticons = {
         "smile": ":)",   # This maps the word to the smiley face symbol
@@ -36,6 +38,7 @@ print(emotify("make me sad"))
 print(emotify("make me mad"))
 
 📌 ITEM 3: List Unpacking
+
 writeyourcodehere = [1, 2, 3, 4, 5, 6]  # This creates a list of numbers stored in a variable
 
 first, *middle, last = writeyourcodehere  # *middle collects all elements between the first and last
