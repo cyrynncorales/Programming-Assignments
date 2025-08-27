@@ -19,18 +19,19 @@ def emotify(text):  # This function replaces specific words with their correspon
         "grin": ":D",    # This maps the word to the grinning face symbol
         "sad": ":((",    # This maps the word to the sad face symbol
         "mad": ">:("     # This maps the word to the angry face symbol
-    }
+        }
 
+ 
     words = text.split()  # This splits the input text into individual words
     result = []
 
     for word in words:
-        if word in emoticons:
+            if word in emoticons:
             result.append(emoticons[word])  # This replaces the word with its corresponding symbol
         else:
             result.append(word)  # This keeps the word unchanged if there's no matching emoticon
-
-    return ' '.join(result)
+            
+        return ' '.join(result)
 
 print(emotify("make me smile"))
 print(emotify("make me grin"))
